@@ -17,11 +17,11 @@ body {
 #logo {
 	font-size: 30px;
   color: #fff;
-  background: #4aaaa5;
+  background: #b5555a;
 }
 
 .panel-title {
-	color: #4aaaa5;
+	color: #b5555a;
 }
 
 h1.panel-title {
@@ -54,7 +54,7 @@ footer {
   color: #ccc;
   text-align: center;
   background: #666;
-  border-top: 8px solid #4aaaa5;
+  border-top: 8px solid #b5555a;
 }
 
 .work {
@@ -79,6 +79,77 @@ footer {
   line-height: 30px;
   color: #fff;
   text-align: center;
-  background: #4aaaa5;
+  background: #b5555a;
   border-bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+  #main-container {
+    padding: 10px;
+    padding-top: 100px;
+  }
+
+  .main-section {
+    max-width: 66%;
+    margin: 10px auto;
+  }
+
+  .sidebar {
+    max-width: 33%;
+    margin: 10px auto;
+  }
+
+  .auth-image, .work {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-container {
+    padding: 10px;
+    padding-top: 100px;
+  }
+
+  .main-section, .sidebar {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .auth-image {
+    width: 50%;
+  }
+
+  .work {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #main-container {
+    padding: 10px;
+    padding-top: 0px;
+  }
+
+  .main-section, .sidebar {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  #logo, .auth-image, .work {
+    width: 100%;
+  }
+
+  #masthead {
+    position: static;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  nav a {
+    width: 30%;
+  }
 }
